@@ -110,3 +110,6 @@ p {
   margin: 0;
   font-family: var(--poppins);
 }
+html {
+  scroll-behavior: smooth;
+}
