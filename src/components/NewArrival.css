@@ -1,0 +1,117 @@
+.new-arrival-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 20px 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Header Row */
+.new-arrival-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.new-arrival-title {
+  font-family: var(--heading);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--text-heading);
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.new-arrival-line {
+  flex: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 0 24px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image-box {
+  background-color: #f4f4f4;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Product Info */
+.product-info {
+  padding-top: 14px;
+}
+
+.product-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-heading);
+  margin: 0 0 6px 0;
+}
+
+.product-price-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-price {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.product-original-price {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+/* Responsive Grid */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .new-arrival-header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .new-arrival-line {
+    display: none;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,138 @@
+.testimonials-section {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 0 40px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.testimonials-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.testimonials-title {
+  font-family: var(--heading);
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 900;
+  color: var(--text-heading);
+  text-align: center;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.testimonials-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* GSAP Carousel Track - Full Width */
+.testimonials-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+}
+
+.testimonials-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  will-change: transform;
+}
+
+.testimonial-card {
+  flex: 0 0 280px;
+  width: 280px;
+  height: 380px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.testimonial-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.testimonial-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  z-index: 2;
+}
+
+.testimonial-content {
+  position: relative;
+  z-index: 3;
+}
+
+.testimonial-quote {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial-author {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.testimonial-stars {
+  color: #ffffff;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+/* Responsiveness */
+@media (max-width: 640px) {
+  .testimonial-card {
+    flex: 0 0 240px;
+    width: 240px;
+    height: 340px;
+  }
+}

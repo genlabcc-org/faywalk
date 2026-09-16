@@ -1,7 +1,7 @@
 .site-header {
   background-color: var(--bg-primary);
   border-bottom: none;
-  padding: 4px 36px;
+  padding: 10px 36px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -10,29 +10,26 @@
 .header-container {
   max-width: 1440px;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
+  gap: 24px;
 }
 
-.logo {
+.header-left {
   display: flex;
   align-items: center;
-  padding: 0;
-  margin: 0;
 }
 
-.logo a {
+.logo-link {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0;
-  margin: 0;
 }
 
 .logo-img {
-  height: 90px;
-  max-height: 110px;
+  height: 52px;
+  max-height: 70px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -40,10 +37,11 @@
   padding: 0;
 }
 
-.nav-menu {
+.header-center {
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: center;
+  gap: 32px;
 }
 
 .nav-link {
@@ -54,12 +52,26 @@
   text-decoration: none;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.divider {
-  color: var(--border-divider);
-  font-weight: 300;
-  user-select: none;
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-heading);
+  text-decoration: none;
 }
 
 .search-wrapper {
@@ -69,24 +81,14 @@
   position: relative;
 }
 
-.search-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-  display: flex;
-  align-items: center;
-  color: var(--text-heading);
-}
-
 .search-input {
   font-family: var(--sans);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   padding: 6px 12px;
   border: 1px solid var(--border-input);
   border-radius: 4px;
   outline: none;
-  width: 180px;
+  width: 160px;
 }
 
 .search-input:focus {
@@ -95,11 +97,15 @@
 
 @media (max-width: 900px) {
   .site-header {
-    padding: 4px 20px;
+    padding: 10px 20px;
   }
 
-  .nav-menu {
-    gap: 14px;
+  .header-container {
+    gap: 16px;
+  }
+
+  .header-center {
+    gap: 16px;
   }
 
   .nav-link {
@@ -107,13 +113,20 @@
   }
 
   .logo-img {
-    height: 64px;
+    height: 40px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .header-container {
-    flex-direction: column;
-    gap: 8px;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  .header-center {
+    grid-column: 1 / -1;
+    order: 3;
+    justify-content: center;
+    padding-top: 8px;
   }
 }

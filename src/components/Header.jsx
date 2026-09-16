@@ -7,23 +7,27 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="header-container">
-        <div className="logo">
-          <a href="#home">
-            <img src="/faywalklogo.png" alt="FAYWALK" className="logo-img" />
+        {/* Left: Brand Logo */}
+        <div className="header-left">
+          <a href="#home" className="logo-link">
+            <img src="/faywalklogo.svg" alt="FAYWALK" className="logo-img" />
           </a>
         </div>
 
-        <nav className="nav-menu">
+        {/* Center: Navigation Menus */}
+        <nav className="header-center nav-menu">
           <a href="#new-arrival" className="nav-link">NEW ARRIVAL</a>
           <a href="#mens" className="nav-link">MENS</a>
           <a href="#womens" className="nav-link">WOMENS</a>
           <a href="#about" className="nav-link">ABOUT US</a>
-          
-          <span className="divider">|</span>
+        </nav>
 
+        {/* Right: Actions (Search, Profile, Shopping Bag) */}
+        <div className="header-right header-actions">
+          {/* Search Icon */}
           <div className="search-wrapper">
             <button 
-              className="search-btn" 
+              className="icon-btn search-btn" 
               aria-label="Search"
               onClick={() => setSearchOpen(!searchOpen)}
             >
@@ -35,13 +39,30 @@ export default function Header() {
             {searchOpen && (
               <input 
                 type="text" 
-                placeholder="Search products..." 
+                placeholder="Search..." 
                 className="search-input"
                 autoFocus 
               />
             )}
           </div>
-        </nav>
+
+          {/* Profile Icon */}
+          <a href="#profile" className="icon-btn profile-btn" aria-label="Account Profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+
+          {/* Shopping Bag Icon */}
+          <a href="#cart" className="icon-btn bag-btn" aria-label="Shopping Bag">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </header>
   )

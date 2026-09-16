@@ -1,6 +1,7 @@
 import React from 'react'
 import TopBar from '../components/TopBar'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import './About.css'
 
 export default function About() {
@@ -14,6 +15,7 @@ export default function About() {
           <p>Redefining modern fashion and streetwear.</p>
         </section>
       </main>
+      <Footer />
     </div>
   )
 }

@@ -45,63 +45,53 @@
 .hero-content {
   position: relative;
   z-index: 3;
-  max-width: 540px;
-}
-
-.hero-badge {
-  display: inline-block;
-  background-color: var(--white);
-  color: var(--accent-blue);
-  font-family: var(--sans);
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 2px;
-  margin-bottom: 12px;
+  max-width: 850px;
 }
 
 .hero-title {
   font-family: var(--heading);
-  font-size: clamp(2rem, 3.8vw, 3.4rem);
-  font-weight: 900;
-  color: var(--white);
-  line-height: 1.02;
-  letter-spacing: -0.5px;
+  font-size: 64px;
+  line-height: 76.8px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
   text-transform: uppercase;
+  color: #ffffff;
   margin: 0 0 14px 0;
+  padding: 0;
   text-shadow: var(--shadow-text);
 }
 
 .hero-subtitle {
-  font-family: var(--sans);
-  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
   font-weight: 400;
-  color: var(--text-muted);
+  font-style: normal;
+  text-transform: none;
+  text-align: left;
+  color: #ffffff;
   margin: 0 0 24px 0;
-  line-height: 1.45;
-}
-
-.hero-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: var(--accent-blue);
-  color: var(--white);
-  font-family: var(--sans);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  padding: 10px 24px;
-  border-radius: 2px;
-  text-decoration: none;
+  padding: 0;
+  white-space: nowrap;
 }
 
 @media (max-width: 900px) {
   .hero-card {
     padding: 24px;
     min-height: 480px;
+  }
+
+  .hero-title {
+    font-size: 44px;
+    line-height: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-subtitle {
+    white-space: normal;
   }
 }
 
@@ -116,6 +106,7 @@
   }
 
   .hero-title {
-    font-size: 1.8rem;
+    font-size: 32px;
+    line-height: 40px;
   }
 }

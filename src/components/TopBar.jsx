@@ -20,7 +20,9 @@ export default function TopBar() {
           <span key={idx} className="topbar-item">
             <span className="star">✦</span>
             {item.type === 'logo' ? (
-              <img src="/faywalklogo.png" alt="FAYWALK" className="topbar-logo" />
+              <span className="topbar-logo-wrapper">
+                <img src="/faywalklogo.svg" alt="FAYWALK" className="topbar-logo" />
+              </span>
             ) : item.href ? (
               <a href={item.href} target={item.href.startsWith('http') ? '_blank' : '_self'} rel="noreferrer" className="topbar-link">
                 {item.text}
