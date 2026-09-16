@@ -1,8 +1,11 @@
-.app {
-  width: 100%;
+.home-page {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: var(--bg-primary);
   color: var(--text-main);
-  font-family: var(--sans);
-  overflow-x: hidden;
+}
+
+.main-content {
+  flex: 1;
 }

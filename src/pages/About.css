@@ -1,0 +1,38 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--sans);
+}
+
+.about-main {
+  flex: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about-hero h1 {
+  font-family: var(--heading);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  color: var(--text-heading);
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+}
+
+.about-hero p {
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--text-main);
+  margin: 0;
+}
