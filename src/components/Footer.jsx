@@ -85,7 +85,7 @@ export default function Footer() {
 
       {/* Large Bottom Watermark */}
       <div className="footer-bottom-watermark">
-        DESIGNED FOR THE BOLD
+        A Legacy Since 1934
       </div>
     </footer>
   )
