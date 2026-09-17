@@ -48,7 +48,7 @@
 }
 
 .category-title {
-  font-family: 'Big Shoulders Display', 'Big Shoulders', sans-serif;
+  font-family: var(--heading);
   font-size: 32px;
   line-height: 38.4px;
   font-weight: 700;
@@ -61,7 +61,7 @@
 }
 
 .category-subtitle {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--sans);
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.4px;

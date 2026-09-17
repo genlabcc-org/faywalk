@@ -5,7 +5,7 @@
   white-space: nowrap;
   padding: 6px 0;
   position: relative;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--sans);
   font-size: 14px;
   line-height: 19.6px;
   font-weight: 400;
@@ -27,7 +27,7 @@
   align-items: center;
   gap: 12px;
   padding-right: 28px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--sans);
   font-size: 10px;
   line-height: 19.6px;
   font-weight: 400;
@@ -46,7 +46,7 @@
 .topbar-link {
   color: #ffffff;
   text-decoration: none;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--sans);
   font-size: 14px;
   line-height: 19.6px;
   font-weight: 400;
@@ -64,6 +64,7 @@
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }

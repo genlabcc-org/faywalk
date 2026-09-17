@@ -4,5 +4,6 @@
   background-color: var(--bg-primary);
   color: var(--text-main);
   font-family: var(--sans);
-  overflow-x: hidden;
+  /* Use clip instead of hidden so position: sticky on Header functions properly */
+  overflow-x: clip;
 }

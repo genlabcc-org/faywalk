@@ -55,7 +55,7 @@ export default function About() {
 
         <section className="about-hero-image">
           <RevealImage
-            src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1600&q=80"
+            src="https://framerusercontent.com/images/txL7ooMH1O483QXsBS64f1CiI.jpg?width=4080&height=1221"
             alt="FAYWALK streetwear collection"
           />
         </section>
@@ -63,16 +63,15 @@ export default function About() {
         <section className="about-statement">
           <h2>Bold. Unapologetic. Yours.</h2>
           <p>
-            At FAYWALK, clothing isn't just something you put on — it's how you show up.
-            We build pieces around clean silhouettes and street-honest details, made for
-            people who want their wardrobe to move as fast as they do.
+            At FAYWALK, every thread carries a legacy built since 1934. We blend decades of experience with a forward-looking vision, creating with the values, dedication, and resilience that have shaped our journey.
+
           </p>
         </section>
 
         <section className="about-feature">
           <div className="about-feature-image">
             <RevealImage
-              src="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=1200&q=80"
+              src="https://framerusercontent.com/images/2gSTCxZllphpt0CBrVtZpVpK9k.jpg?width=2004&height=1326"
               alt="FAYWALK garment detail"
             />
           </div>
@@ -97,7 +96,7 @@ export default function About() {
           </div>
           <div className="about-feature-image">
             <RevealImage
-              src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?auto=format&fit=crop&w=1200&q=80"
+              src="https://framerusercontent.com/images/fcluvvbQNHEYQmMgXKyN1701vNI.jpg?width=2004&height=1326"
               alt="FAYWALK model portrait"
             />
           </div>

@@ -41,7 +41,7 @@
 }
 
 .brand-feature-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--poppins);
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--text-heading);

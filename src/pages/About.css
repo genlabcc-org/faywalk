@@ -25,7 +25,6 @@
 }
 
 .about-hero h1 {
-  font-family: var(--heading);
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   font-weight: 900;
   color: var(--text-heading);
@@ -67,7 +66,6 @@
 }
 
 .about-statement h2 {
-  font-family: var(--heading);
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   font-weight: 800;
   color: var(--text-heading);
@@ -101,7 +99,6 @@
 }
 
 .about-feature-text h2 {
-  font-family: var(--heading);
   font-weight: 900;
   text-transform: uppercase;
   font-size: clamp(2.8rem, 5vw, 4.8rem);

@@ -1,11 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Header.css'
 
 export default function Header() {
   const [searchOpen, setSearchOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${isScrolled ? 'is-scrolled' : ''}`}>
       <div className="header-container">
         {/* Left: Brand Logo */}
         <div className="header-left">

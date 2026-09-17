@@ -65,7 +65,7 @@
 }
 
 .product-title {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--sans);
   font-size: 0.9rem;
   font-weight: 400;
   color: var(--text-heading);
@@ -79,14 +79,14 @@
 }
 
 .product-price {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--sans);
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-heading);
 }
 
 .product-original-price {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--sans);
   font-size: 0.85rem;
   color: #9ca3af;
   text-decoration: line-through;
